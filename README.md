@@ -64,3 +64,34 @@ Requirement Analysis is a cornerstone of successful software development, partic
    - **Impact**: Enhances user retention (e.g., 53% of users abandon slow sites, per Google) and avoids legal risks (e.g., GDPR fines up to €20M for security failures).
 
 By establishing a clear, prioritized, and validated set of requirements, Requirement Analysis ensures the hotel booking system is scalable, user-friendly, and aligned with business goals, laying a robust foundation for development.
+
+## Key Activities in Requirement Analysis
+
+The following activities are essential for conducting effective Requirement Analysis for a hotel booking system, ensuring stakeholder needs are clearly defined and actionable:
+
+- **Requirement Gathering**:
+  - Collect initial stakeholder needs using techniques like interviews, surveys, workshops, observation, and document analysis.
+  - Example: Interview hotel managers to identify needs like “update room availability in real-time” or survey customers to confirm “80% want price-based hotel filters.”
+  - Relevance: For a hotel booking system, gathering needs ensures features like the Hotel Management Service align with manager requirements (e.g., updating listings via a dedicated portal).
+
+- **Requirement Elicitation**:
+  - Refine and elaborate requirements through brainstorming, focus groups, and prototyping to uncover detailed or hidden needs.
+  - Example: Create a prototype of the booking interface to validate “users can select check-in/check-out dates” or brainstorm personalized recommendation features.
+  - Relevance: Elicitation clarifies vague requests (e.g., “fast search”) into specific requirements like “search results via Elasticsearch in <200ms.”
+
+- **Requirement Documentation**:
+  - Document requirements in a structured format, such as a Software Requirements Specification (SRS), user stories, or use cases.
+  - Example: Write a user story: “As a customer, I want to filter hotels by location so I can find nearby options,” or document use cases for booking processes.
+  - Relevance: Documentation ensures the Customer Service (Search + Booking) requirements, like payment integration, are clearly defined for developers.
+
+- **Requirement Analysis and Modeling**:
+  - Analyze requirements for prioritization (e.g., MoSCoW), assess feasibility, and create models like data flow or use case diagrams to visualize system interactions.
+  - Example: Prioritize “booking system” over “loyalty program” and model interactions (e.g., Customer → Book Property) using Draw.io.
+  - Relevance: Modeling helps visualize how the Booking Service interacts with Redis and Cassandra for fast, scalable data access.
+
+- **Requirement Validation**:
+  - Review requirements with stakeholders to ensure accuracy, define measurable acceptance criteria, and establish traceability using a Requirements Traceability Matrix (RTM).
+  - Example: Validate “booking confirmation email sent in <2 minutes” with stakeholders and link it to business needs in the RTM.
+  - Relevance: Validation ensures the View Booking Service meets user expectations (e.g., fast access to booking details via Redis cache).
+
+These activities collectively ensure the hotel booking system’s requirements are comprehensive, prioritized, and validated, supporting a scalable and user-centric platform.
