@@ -95,3 +95,27 @@ The following activities are essential for conducting effective Requirement Anal
   - Relevance: Validation ensures the View Booking Service meets user expectations (e.g., fast access to booking details via Redis cache).
 
 These activities collectively ensure the hotel booking system’s requirements are comprehensive, prioritized, and validated, supporting a scalable and user-centric platform.
+
+## Types of Requirements
+
+Requirements for the hotel booking system are categorized into Functional and Non-Functional Requirements, each addressing different aspects of the system to ensure it meets user needs and performs effectively, as outlined in the case study.
+
+### Functional Requirements
+- **Definition**: Functional Requirements specify what the system must do, detailing the features, functionalities, and user interactions required to achieve business goals. They focus on the specific behaviors and capabilities of the system.
+- **Examples** (aligned with the hotel booking system case study):
+  - **Hotel Search**: Customers can search for hotels by criteria such as location, price, availability, and amenities, using the Customer Service (Search) microservice with Elasticsearch for fast querying.
+  - **Booking Process**: Users can select check-in/check-out dates, confirm bookings, and integrate with a third-party payment service (e.g., Stripe) via the Customer Service (Booking) microservice.
+  - **Hotel Management**: Hotel managers can update room availability, pricing, and property details through a dedicated portal in the Hotel Management Service, with data synced to the master-slave Hotel DB.
+  - **View Booking Details**: Customers and managers can view current and past booking details via the View Booking Service, retrieving data from Redis (recent) and Cassandra (archived).
+  - **User Authentication**: Users can register and log in securely using OAuth 2.0, ensuring authorized access to booking and management features.
+
+### Non-Functional Requirements
+- **Definition**: Non-Functional Requirements describe how the system should perform, focusing on quality attributes like performance, security, scalability, usability, and reliability. They ensure the system meets user expectations and industry standards.
+- **Examples** (aligned with the hotel booking system case study):
+  - **Performance**: API responses (e.g., search, booking) must complete in <200ms for 95% of requests, and pages (e.g., search results) must load in <2 seconds, leveraging CDN and Redis caching.
+  - **Scalability**: The system must support 10,000 concurrent users and 1 million transactions/day, with load balancers distributing traffic across Hotel and Booking Service clusters.
+  - **Security**: All sensitive data (e.g., payment details) must use AES-256 encryption and HTTPS with TLS 1.3, with zero vulnerabilities from OWASP Top 10, as implemented in API communications.
+  - **Usability**: The Customer and Manager apps must be responsive across devices (Chrome, Safari, iOS 15+, Android 11+) and comply with WCAG 2.1 AA accessibility standards.
+  - **Reliability**: The system must achieve 99.99% uptime (<52 minutes/year downtime), with master-slave database synchronization completing in <1 second for data consistency.
+
+These requirements ensure the hotel booking system delivers core functionalities (e.g., search, booking) while maintaining high performance, security, and usability, aligning with the microservices architecture described in the case study.
