@@ -43,3 +43,24 @@ Requirement Analysis is a critical SDLC phase where stakeholder needs for a hote
 - **Benefits**: Ensure quality, guide testing, and align expectations.
 
 This process ensures the hotel booking system is well-defined, scalable, and user-focused, as seen in platforms like Airbnb and OYO.
+
+## Why is Requirement Analysis Important?
+
+Requirement Analysis is a cornerstone of successful software development, particularly for complex systems like a hotel booking platform. Below are three key reasons why it is critical in the SDLC, with examples relevant to a hotel booking system:
+
+1. **Prevents Scope Creep and Aligns Stakeholder Expectations**  
+   - **Description**: Requirement Analysis defines a clear project scope by documenting stakeholder needs (e.g., customers, hotel managers) and setting boundaries for what is included or excluded. This prevents scope creep, where unplanned features (e.g., adding a chat feature mid-project) derail timelines and budgets.  
+   - **Example**: For a hotel booking system, Requirement Analysis ensures the scope is limited to core features like search and booking, with clear acceptance criteria (e.g., “Search results load in <200ms”). Without this, stakeholders might assume additional features like real-time reviews, causing scope creep.  
+   - **Impact**: Saves 40-60% of rework costs (per Standish Group) by avoiding misaligned expectations.
+
+2. **Reduces Development Costs and Risks**  
+   - **Description**: By providing a detailed blueprint of functional (e.g., booking system) and non-functional (e.g., scalability for 10K users) requirements, Requirement Analysis enables accurate cost, resource, and time estimates. This minimizes costly rework due to misunderstood or incomplete requirements.  
+   - **Example**: In a hotel booking system, specifying “API response time <200ms” ensures developers use efficient technologies like Elasticsearch, avoiding performance issues that could cost millions (e.g., 1s delay = 11% conversion loss, per industry data).  
+   - **Impact**: Reduces project failure rates, as 50% of failures stem from poor requirements (Standish Group).
+
+3. **Ensures High-Quality User Experience and System Performance**  
+   - **Description**: Requirement Analysis defines measurable non-functional requirements (e.g., performance, usability, security) to ensure the system meets user expectations and industry standards. This leads to higher user satisfaction and business success.  
+   - **Example**: For a hotel booking system, defining “99.99% uptime” and “WCAG 2.1 AA accessibility” ensures the platform is reliable (like Airbnb’s <52min/year downtime) and accessible to all users, including those with disabilities.  
+   - **Impact**: Enhances user retention (e.g., 53% of users abandon slow sites, per Google) and avoids legal risks (e.g., GDPR fines up to €20M for security failures).
+
+By establishing a clear, prioritized, and validated set of requirements, Requirement Analysis ensures the hotel booking system is scalable, user-friendly, and aligned with business goals, laying a robust foundation for development.
