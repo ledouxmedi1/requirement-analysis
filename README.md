@@ -119,3 +119,24 @@ Requirements for the hotel booking system are categorized into Functional and No
   - **Reliability**: The system must achieve 99.99% uptime (<52 minutes/year downtime), with master-slave database synchronization completing in <1 second for data consistency.
 
 These requirements ensure the hotel booking system delivers core functionalities (e.g., search, booking) while maintaining high performance, security, and usability, aligning with the microservices architecture described in the case study.
+
+## Use Case Diagrams
+
+Use Case Diagrams are a visual tool in Requirement Analysis that illustrate the interactions between actors (users or external systems) and the system to achieve specific goals, known as use cases. For the hotel booking system, they provide a clear representation of how different users engage with its features.
+
+### Description and Benefits
+- **What Are Use Case Diagrams?**: They depict actors (e.g., Guest, Hotel Manager) on the left and use cases (e.g., Search Hotels, Book Hotel) on the right, connected by lines to show relationships. This helps in understanding system functionalities and user interactions.
+- **Benefits**:
+  - **Clarity**: Offers a simple, visual overview of system capabilities, making it easy for stakeholders to understand.
+  - **Communication**: Facilitates discussions between developers, stakeholders, and designers to align on requirements.
+  - **Requirement Validation**: Helps identify missing or overlapping functionalities, ensuring comprehensive coverage (e.g., ensuring both Guests and Registered Users can search hotels).
+
+### Use Case Diagram for Hotel Booking System
+Below is a use case diagram representing the key interactions for the hotel booking system, based on the case study’s microservices architecture (e.g., Customer Service, Hotel Management Service).
+
+![Use Case Diagram](./alx-booking-uc.png)
+
+This diagram includes:
+- **Actors**: Guest, Registered User, Hotel Manager, Admin.
+- **Use Cases**: Search Hotels, Book Hotel, Manage Listings, View Booking Details, Process Payments, Generate Reports.
+- **Associations**: Lines connecting actors to their respective use cases, reflecting the system’s functionality as described in the case study (e.g., Registered User → Book Hotel via Booking Service).
