@@ -140,3 +140,24 @@ This diagram includes:
 - **Actors**: Guest, Registered User, Hotel Manager, Admin.
 - **Use Cases**: Search Hotels, Book Hotel, Manage Listings, View Booking Details, Process Payments, Generate Reports.
 - **Associations**: Lines connecting actors to their respective use cases, reflecting the system’s functionality as described in the case study (e.g., Registered User → Book Hotel via Booking Service).
+
+## Acceptance Criteria
+
+Acceptance Criteria are specific, measurable conditions that a feature must meet to be accepted by stakeholders, ensuring the system fulfills its intended purpose. They are a vital part of Requirement Analysis, bridging the gap between stakeholder expectations and development outcomes.
+
+### Importance in Requirement Analysis
+- **Clarity and Alignment**: Acceptance Criteria eliminate ambiguity by providing a clear definition of “done” (e.g., “booking confirmation in <2 minutes”), aligning developers and stakeholders.
+- **Quality Assurance**: They serve as a basis for testing, ensuring the system meets functional and non-functional requirements (e.g., performance, usability), reducing post-release issues.
+- **Scope Control**: By setting boundaries (e.g., “only supports Stripe and PayPal”), they prevent scope creep and focus development on agreed features.
+- **Stakeholder Confidence**: Validated criteria build trust by demonstrating the system meets business and user needs, enhancing satisfaction.
+
+### Example: Acceptance Criteria for Checkout Feature
+The Checkout feature, part of the Booking Service in the hotel booking system, allows Registered Users to finalize their bookings with payment. Below is an example of acceptance criteria:
+
+- The Checkout process must allow users to review their selected hotel, dates, and total cost before payment.
+- Payment must be processed successfully within 5 seconds using a third-party service (e.g., Stripe) for 99% of transactions.
+- A confirmation email with booking details (hotel name, dates, payment status) must be sent to the user within 2 minutes of successful payment.
+- The system must display an error message and rollback the booking if the payment fails, with a recovery time of less than 10 seconds.
+- The Checkout page must be responsive on all devices (Chrome, Safari, iOS 15+, Android 11+) and load in under 2 seconds.
+
+These criteria ensure the Checkout feature is functional, reliable, and user-friendly, aligning with the case study’s emphasis on the Booking Service’s integration with payment systems and performance requirements.
